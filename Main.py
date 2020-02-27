@@ -54,13 +54,14 @@ def startprogram():
 	t4.start()
 	t1.join()
 	t2.join()
-	t3.join()
+	#t3.join()
 	t4.join()
 	return 0
 
 def main():
-	startprogram()
-	time.sleep(5)                                  #take a nap to give a break to the processor..
+	while 1:
+		startprogram()
+		time.sleep(5)                                  #take a nap to give a break to the processor..
 	return 0
 
 if __name__ == '__main__':
